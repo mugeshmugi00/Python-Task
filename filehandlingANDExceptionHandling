@@ -1,0 +1,21 @@
+def openFile(filename):
+    try:
+        file=open(filename)
+        print(file)
+    except Exception as e:
+        return "there is no file to open so, i created the new File"
+    else:
+        print("the file is opend")
+    finally:
+        print("new the function is changing the file is alredy exists or not")
+        try:
+            print("inside the try")
+            file=open(filename,"r")
+            data=file.read()
+            print(data)
+
+        except:
+            return("the file is alredy exists")
+        else:
+            print("This is else block")
+openFile("mukesh.txt")        

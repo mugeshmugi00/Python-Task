@@ -1,0 +1,12 @@
+list1=[1,2,3,4,5]
+try:
+    index=int(input("Enter the value:"))
+    print(list1[index])
+except IndexError as a:
+    print("index error")
+except ValueError as b:
+    print("value error")
+else:
+    print("no error")
+finally:
+    print("final")        

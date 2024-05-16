@@ -1,0 +1,18 @@
+def creatFile(filename):
+    try:
+        print("this is try block1")
+        file=open(filename)
+        print(file)
+    except Exception as e:
+        return("there is no file, so i Created newly")
+    else:
+        print("file is open")
+        try:
+            print("this is try block2")
+            open(filename,"x")
+        except Exception as e:
+            print("this file is alredy exists")
+        else:
+            print("this is else block")
+
+creatFile("oceanAcadamy.txt")

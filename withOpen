@@ -1,0 +1,6 @@
+import json
+def profile(data):
+    data={"name":"mugesh","age":21}
+    person_data=json.loads(data)
+    print("name:",person_data["name"])
+profile(data)    

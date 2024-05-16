@@ -1,0 +1,30 @@
+
+# user name checking for file already exists:
+import os
+def createFile(userName):
+    # check user name file
+    checkFile=os.path.exists(f"{userName}.txt")
+    # file already exists
+    if(checkFile):
+        print("This user Name alredy created Pls create another name")
+    else:
+        # new file created
+        file=open(f"{userName}.txt","x")
+        print("file created sucessfully")
+# fuction calling 
+createFile("ocean")
+
+# write file fuction
+def writeFile(userName):
+    # open user name file 
+    file=open(f"{userName}.txt","w")
+    # write contant
+    file.write("file name : ocean\ndate:\tbalance:")
+writeFile("ocean")    
+
+# append file
+def appendfile(userName):
+    file=open(f"{userName}.txt","a")
+    file.write("\n29-04-24\t1000")
+appendfile("ocean")    
+

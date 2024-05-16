@@ -1,0 +1,9 @@
+import os
+def creatFile(userName):
+    checkFile = os.path.exists(f"{userName}.txt")
+    if(checkFile):
+        print("file is already exist please give different file name")
+    else:
+        file = open(f"{userName}.txt","x")
+        print("file created successfully")    
+creatFile("mugesh")    

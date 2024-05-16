@@ -1,0 +1,33 @@
+import os
+import json
+valu={"name":"mugesh","age":21}
+
+#creating filke if check file is exists or not
+def checkfile(filename):
+    isfile=os.path.exists(filename)
+
+    if(isfile):
+        print("file already exists")
+    else:
+        personfile=open(filename, "x")
+        print("file created successfully")
+
+checkfile("mano.json")
+
+# #writing a file some messages in this block
+
+# def writefile(filename):
+#     print("writing block")
+#     creat=checkfile(filename)
+#     with open(filename, "w") as file:
+#         writingfile=file.write(json.dumps(valu))
+#         print(writingfile)
+# #writefile("mano.json")
+
+# #reading file in this block
+# def readfile(filename):
+#     write=writefile(filename)
+#     with open(filename, "r") as file:
+#         readingfile=file.read()
+#         print(readingfile)
+# readfile("mano.json")

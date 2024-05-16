@@ -1,0 +1,26 @@
+class Student:
+    name="thamizh"
+    age=20
+    rollno=1001
+    mark=450
+    address="pondy"
+    def read(self):
+        print("reading")
+    def write(self):
+        print("writing")
+    def playGame(self):
+        print("playing games")
+
+
+obj=Student()#instantiation
+obj1=Student()
+obj2=Student()
+
+print(obj.name)
+print(obj.age)
+print(obj.rollno)
+# obj.name="thamizharasan"
+# print(obj.name)
+obj.read()
+obj.write()
+print(obj1.name)
