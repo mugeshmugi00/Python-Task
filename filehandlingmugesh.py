@@ -23,7 +23,7 @@ def createFile(filename):
         file.close()
         print("file is created successfully")
         
-# createFile("datas.json")
+createFile("datas.json")
 
 def writeFile(filename):
     res = checkFile(filename)
@@ -34,7 +34,7 @@ def writeFile(filename):
         print("ther is no file")
         createFile(filename)
         print('write successfully')
-# writeFile("datas.json") 
+writeFile("datas.json") 
        
 def readFile(filename):
     with open(filename,"r") as file:

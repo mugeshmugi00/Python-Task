@@ -15,19 +15,18 @@ def checkfile(filename):
 checkfile("mano.json")
 
 # #writing a file some messages in this block
+def writefile(filename):
+    print("writing block")
+    creat=checkfile(filename)
+    with open(filename, "w") as file:
+        writingfile=file.write(json.dumps(valu))
+        print(writingfile)
+writefile("mano.json")
 
-# def writefile(filename):
-#     print("writing block")
-#     creat=checkfile(filename)
-#     with open(filename, "w") as file:
-#         writingfile=file.write(json.dumps(valu))
-#         print(writingfile)
-# #writefile("mano.json")
-
-# #reading file in this block
-# def readfile(filename):
-#     write=writefile(filename)
-#     with open(filename, "r") as file:
-#         readingfile=file.read()
-#         print(readingfile)
-# readfile("mano.json")
+#reading file in this block
+def readfile(filename):
+    write=writefile(filename)
+    with open(filename, "r") as file:
+        readingfile=file.read()
+        print(readingfile)
+readfile("mano.json")
