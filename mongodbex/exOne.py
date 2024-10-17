@@ -73,7 +73,6 @@ mycol = mydb['users']
 
 # pipeline = [{"$sort":{"age":1}}]
 ##nameSort = [{"$sort":{"name":1}}]
-##
 ##def getData(sortType):
 ##    result = mycol.aggregate(sortType)
 ##    for doc in result:
@@ -81,9 +80,9 @@ mycol = mydb['users']
 ##getData(nameSort)
 
 # get all data greater than age 25
-query = { 'age': { '$gt': 25 } }
-def getData(queryData):
-    result = mycol.find(queryData)
-    for doc in result:
-        print(doc)
-getData(query)
+# query = { 'age': { '$gt': 25 } }
+# def getData(queryData):
+#     result = mycol.find(queryData)
+#     for doc in result:
+#         print(doc)
+# getData(query)

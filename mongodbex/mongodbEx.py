@@ -79,11 +79,10 @@ newData = [
 # getUserby_ID("670f5586e3839ccc5aca8e29")  
 
 # find name by user
-def get_userName(userName):
-    
-    result = myCollection.find_one({"name":userName})
-    print(result)
-get_userName("Jane Smith")    
+# def get_userName(userName):
+#     result = myCollection.find_one({"name":userName})
+#     print(result)
+# get_userName("Jane Smith")    
     
     
 
